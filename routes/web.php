@@ -17,7 +17,7 @@ Route::get('/', function () {
     $data = [
         'salutare' => 'Saluta',
         'aboutUs' => 'Chi Siamo',
-        'info' => 'Contatti'
+        'description' => 'Cosa facciamo'
     ];
     return view('welcome', $data);
 })->name('welcome');
@@ -37,3 +37,8 @@ Route::get('/chi-siamo', function () {
         ];
     return view('about', $data);
 })->name('about');
+
+Route::get('/description', function () {
+    $data = ['description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit odit esse ipsa quod quaerat excepturi nulla sit rem pariatur est porro libero optio eius, atque dignissimos recusandae error molestias similique culpa. Non velit fugiat consequuntur optio, sint at vero dolor, ad est expedita nostrum tempora labore corrupti error pariatur doloremque.'];
+    return view('description', $data);
+})->name('description');

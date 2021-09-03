@@ -79,7 +79,7 @@
                 <ul class="links">
                     <li><a href="{{route('helloWorld')}}"> {{$salutare}} </a></li>
                     <li><a href="{{route('about')}}"> {{$aboutUs}} </a></li>
-                    <li><a href="{{route('helloWorld')}}"> {{$info}} </a></li>
+                    <li><a href="{{route('description')}}"> {{$description}} </a></li>
                 </ul>
             </div>
         </div>
