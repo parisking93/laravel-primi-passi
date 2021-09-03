@@ -76,10 +76,11 @@
                     Welcome !!
                 </div>
 
+
                 <ul class="links">
-                    <li><a href="{{route('helloWorld')}}"> {{$salutare}} </a></li>
-                    <li><a href="{{route('about')}}"> {{$aboutUs}} </a></li>
-                    <li><a href="{{route('description')}}"> {{$description}} </a></li>
+                    @foreach($links as $k => $value)
+                        <li><a href="{{route($k)}}"> {{$value}} </a></li>  
+                    @endforeach
                 </ul>
             </div>
         </div>

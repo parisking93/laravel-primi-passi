@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'salutare' => 'Saluta',
-        'aboutUs' => 'Chi Siamo',
-        'description' => 'Cosa facciamo'
+        'links' =>[
+            'helloWorld' => 'Saluta',
+            'about' => 'Chi Siamo',
+            'description' => 'Cosa facciamo'
+        ]
     ];
     return view('welcome', $data);
 })->name('welcome');
