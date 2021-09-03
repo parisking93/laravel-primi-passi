@@ -14,9 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = [
+        'salutare' => 'Saluta',
+        'aboutUs' => 'Chi Siamo',
+        'info' => 'Contatti'
+    ];
+    return view('welcome', $data);
 })->name('welcome');
 
 Route::get('/helloWorld', function () {
     return view('helloWorld');
 })->name('helloWorld');
+
+Route::get('/chi-siamo', function () {
+    $data = [
+        'info' => [
+            'name' => 'emmanuel',
+            'surname' => 'parisi',
+            'email' => 'nonladico@gmail.com',
+            'number' => 3911557898
+            ]
+        ];
+    return view('about', $data);
+})->name('about');

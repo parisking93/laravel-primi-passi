@@ -18,10 +18,7 @@
             }
             h1 {
                 color: #636b6f;
-                position: absolute;
-                left: 50%;
-                top : 50%;
-                transform: translate(-50%,-50%);
+                margin : 50px;
             }
         </style>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -29,7 +26,14 @@
     <body>
         <h3><a href="{{route('welcome')}}">Torna indietro</a></h3>
 
-        <h1>HELLO WORLD !!!</h1>
+        <h1>info</h1>
+        <ul>
+            @foreach($info as $k => $value)
+                <li>
+                    <h4>{{$k}}: </h4>{{$value}};
+                </li>
+            @endforeach
+        </ul>
         
     </body>
 </html>

@@ -47,8 +47,13 @@
             .title {
                 font-size: 84px;
             }
-
-            .links > a {
+            .links {
+                list-style: none;
+            }
+            .links li {
+                display : inline-block;
+            }
+            .links a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -58,6 +63,7 @@
                 text-transform: uppercase;
             }
 
+
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -65,28 +71,16 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            <!-- @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif -->
-
             <div class="content">
                 <div class="title m-b-md">
                     Welcome !!
                 </div>
 
-                <div class="links">
-                    <a href="{{route('helloWorld')}}">Saluta</a>
-                </div>
+                <ul class="links">
+                    <li><a href="{{route('helloWorld')}}"> {{$salutare}} </a></li>
+                    <li><a href="{{route('about')}}"> {{$aboutUs}} </a></li>
+                    <li><a href="{{route('helloWorld')}}"> {{$info}} </a></li>
+                </ul>
             </div>
         </div>
     </body>
