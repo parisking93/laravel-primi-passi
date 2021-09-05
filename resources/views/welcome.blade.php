@@ -49,6 +49,7 @@
             }
             .links {
                 list-style: none;
+                padding-left: 0;
             }
             .links li {
                 display : inline-block;
@@ -61,6 +62,8 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                text-align: center;
+                
             }
 
 

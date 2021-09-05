@@ -22,12 +22,13 @@
                 left: 50%;
                 top : 30%;
                 transform: translate(-50%,-30%);
+                margin: 1.8rem:
             }
             h2 {
                 color: #636b6f;
                 position: absolute;
                 left: 50%;
-                top : 50%;
+                top : 60%;
                 transform: translate(-50%,-50%);
             }
 
@@ -36,7 +37,7 @@
     </head>
     <body>
         <h3><a href="{{route('welcome')}}">Torna indietro</a></h3>
-        <h1>Chi siamo</h1>
+        <h1>Cosa facciamo</h1>
         <h2>{{$description}}</h2>
         
     </body>
